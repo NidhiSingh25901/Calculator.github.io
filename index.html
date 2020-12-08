@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body> 
+
+    <div class="box">
+    <div class= "container">
+        <div class="screen">
+            <div><input type="text" id="equation"></div>
+            <div><input type="text" id="result"></div>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td><button class="clear" onclick="clearscreen()">C</button></td>
+            <td><button class="backspace" onclick="back()">&#8592;</button></td>
+            <td><button class="divide" onclick="dis('/')">&#247;</button></td>
+            <td><button class="multiply" onclick="dis('*')">&#215;</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="number" onclick="dis('9')">9</button></td>
+            <td><button class="number" onclick="dis('8')">8</button></td>
+            <td><button class="number" onclick="dis('7')">7</button></td>
+            <td><button class="add" onclick="dis('+')">+</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="number" onclick="dis('6')">6</button></td>
+            <td><button class="number" onclick="dis('5')">5</button></td>
+            <td><button class="number" onclick="dis('4')">4</button></td>
+            <td><button class="subtract" onclick="dis('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="number" onclick="dis('3')">3</button></td>
+            <td><button class="number" onclick="dis('2')">2</button></td>
+            <td><button class="number" onclick="dis('1')">1</button></td>
+            <td><button classs="modulus" onclick="dis('%')">%</button></td>
+        </tr> 
+        <tr>
+            <td><button class="number" onclick="dis('0')">0</button></td>
+            <td><button class="number" onclick="dis('.')">.</button></td> 
+            <td><button class="operator"onclick="dis('sqrt')">&radic;</button></td>
+            <td><button class="equals" onclick="equal()">=</button></td>
+        </tr>
+    </table>
+
+</div> 
+</body>
+
+<script src="function.js"></script>
+</html>
